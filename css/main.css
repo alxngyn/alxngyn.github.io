@@ -2,11 +2,15 @@
 	position:relative;
 }
 
-.navbar{
-	background-color: transparent;
+a{
+	color: #2E3233;
+}
+a:hover{
+	color: #CAF200;
 }
 
 .navbar{
+	background-color: transparent;
 	padding: 13px;
 	transition: padding .5s ease-in-out, background .35s ease-in-out;
 }
@@ -16,21 +20,37 @@
 	padding: 5px;
 	font-size: 14px;
 	font-weight: bold;
-	font-color: white;
 	text-transform: uppercase;
+	color: #2E3233;
 }
 
 .top-nav-collapse{
 	padding: 0px;
-	background-color: #424B5C;
 }
 
-video #bgvid{
-	position: fixed;
-	width: auto;
-	height: auto;
-	background-image: url(img/portland.jpg)
-	background-repeat: no-repeat;
+.nav-pills li.active a{
+	color: #2E3233;
+	background-color: #CAF200;
+}
+
+/* TODO: figure out why if active, hover turns it BootStrap blue
+.nav-pills li.active a:hover{
+	color: #2E3233;
+	background-color: #CAF200;
+}
+
+.nav-pills li:active a:focus{
+	color: #2E3233;
+	background-color: #CAF200;
+}
+*/
+
+.bgvid video {
+	position:relative;
+	/*min-width: auto;
+	min-height: auto;*/
+	width: 100%		!important;
+	height: auto	!important;
 	background-size: cover;
 	margin: 0px;
 	border-bottom: 1px black;
@@ -38,70 +58,84 @@ video #bgvid{
 }
 
 .video{
-	height:750px;
-
+	width: 100%;
+	height: auto;
 }
 
 .video .container{
 	position:relative;
-	top: -400px;
+	top: -20em;
+	text-align: center;
 	padding: 0px;
+}
+
+.video .container a{
+	font-size: 10em;
+	color: #E2E3DF;
+}
+
+.video .container a:hover{
+	color: #CAF200;
 }
 
 .stopfade{
 	opacity: .5;
 }
-/*
-.jumbotron{
-	height:600px;
-	background-image: url("../img/Portland.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin:0px;
-	border-bottom: 1px black;
-}
 
-.jumbotron .container{
-	position: relative;
-	top: 200px;
-}
 
-.jumbotron h1{
-	font-size: 48px;
-	font-weight: bold;
-	color: white;
-}
-
-.jumbotron p {
-	font-size: 20px;
-	color: white;
-}
-*/
 .about{
-	background-color:#E4DAD8;
-	height:400px;
-	/*padding:35px;*/
+	position: relative;
+	background-color:#FFFEFC;
+	color: #2E3233;
+	height:130%;
+	padding-bottom: 85px;
+}
 
+.about h1{
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 font-size: 150px;
+	 text-align: center;
+	 width: 100%;
+}
+
+.about h2{
+	color: #CAF200;
 }
 
 .about .row{
 	position:relative;
 	top:75px;
-}
-
-.contact{
-	background-color:#424B5C;
-	padding:100px;
-}
-
-.contact .col-md-4{
-	margin: 25px;
-	margin-left: auto;
-	margin-right: auto;
+	height: auto;
 }
 
 .footer{
-	background-color:#1F1919;
-	padding:15px;
-
+	height:34px;
+	position: relative;
+	background-color:#FFFEFC;
+	color: #2E3233;
+	padding:10px;
+	display: block;
+	bottom:0;
+	margin: 0px;
 }
+.footer .container{
+	bottom: 0px;
+}
+.footer ul{
+	padding: 0px;
+}
+.footer li{
+	display: inline;
+	padding: 0px;
+}
+
+/* TODO: make jumbotron for mobile
+.jumbotron{
+	height:720px;
+	background-image: url("../img/banner_laptop_600.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin:0px;
+	border-bottom: 1px black;
+}
+*/

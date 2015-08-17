@@ -1,13 +1,14 @@
 
 //navbar collapsing
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 250) {
+    if ($(".navbar").offset().top > 700) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
 
+//when using lunks to jump sections
 $(function() {
 	$('a.page-scroll').bind('click', function(event){
 		var $anchor= $(this);
@@ -17,6 +18,8 @@ $(function() {
 		event.preventDefault();
 	});
 });
+
+/*
 //Hover effects
 $( ".Linkedin" ).mouseover(function() {
 	var img = $( this );
@@ -49,7 +52,7 @@ $( ".Email" ).mouseout(function() {
 	img.attr("src","img/email.png");
 });
 
-//video pause functions
+//video pause button functions
  var vid = document.getElementById("bgvid");
  var pauseButton = document.getElementById("vidpause");
 
@@ -76,3 +79,5 @@ $( ".Email" ).mouseout(function() {
          pauseButton.innerHTML = "Paused";
      }
  })
+
+ */
