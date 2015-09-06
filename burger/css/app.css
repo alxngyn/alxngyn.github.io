@@ -1,0 +1,50 @@
+
+body{
+    background-color: #070d0b;
+    font-size: 2em;
+
+}
+
+.bg{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg > *{
+    height: 200%;
+    position: relative;
+    top: -130%;
+}
+
+.title{
+    color: white;
+    top: 50vh;
+    right: -70vw;
+}
+
+.end{
+    color: white;
+    top: 40vh;
+    text-align: center;
+}
+
+.image1{
+    background-image: url("../pics/classic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.image2{
+    background-image: url("../pics/homemade.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.image3{
+    background-image: url("../pics/mcwhopper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.image4{
+    background-image: url("../pics/plate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
