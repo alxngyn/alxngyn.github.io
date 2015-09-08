@@ -1,0 +1,48 @@
+
+.container{
+    padding: 200px 0 3000px 0;
+}
+
+#scene{
+    position: relative;
+}
+
+.burrito{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pics/BURRITO.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    left: 1em;
+}
+
+.burrito1{
+    background-image: url(../pics/B.png);
+}
+
+.burrito2{
+    background-image: url(../pics/U.png);
+}
+
+.burrito3{
+    background-image: url(../pics/R.png);
+}
+
+.burrito4{
+    background-image: url(../pics/R2.png);
+}
+
+.burrito5{
+    background-image: url(../pics/I.png);
+}
+
+.burrito6{
+    background-image: url(../pics/T.png);
+}
+
+.burrito7{
+    background-image: url(../pics/O.png);
+}
