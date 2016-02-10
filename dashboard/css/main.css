@@ -1,0 +1,22 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    background-color: rgb(192, 192, 192);
+}
+
+.title{
+    text-align: center;
+}
+.weather-container{
+    text-align: center;
+}
+.table{
+    max-width: 720px;
+}
+.table td {
+    text-align: center;
+}
