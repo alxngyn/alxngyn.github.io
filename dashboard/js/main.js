@@ -1,7 +1,3 @@
-$(document).ready(function(){
-    getWeather();
-});
-
 // get weather information for Corvallis,
 // uses simpleweatherjs
 function getWeather() {
@@ -38,3 +34,19 @@ function getWeather() {
     }
     });
 };
+
+// get traffic information for Corvallis
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat:44.5771716, lng:-123.2804807}
+  });
+
+  var trafficLayer = new google.maps.TrafficLayer();
+  trafficLayer.setMap(map);
+}
+
+$(document).ready(function(){
+    getWeather();
+    initMap();
+});
