@@ -36,7 +36,7 @@ function getWeather() {
 };
 
 // get traffic information for Corvallis
-function initMap() {
+function initMap    () {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 13,
     center: {lat:44.5771716, lng:-123.2804807}
@@ -46,7 +46,16 @@ function initMap() {
   trafficLayer.setMap(map);
 }
 
+function timedRefresh(t) {
+    // 30000 = 30 seconds
+    // 1000 ms = 1 second
+    console.log("We're inside timed refresh");
+    setTimeout("location.reload(true);", t);
+}
+
+// onload do this:
 $(document).ready(function(){
+    timedRefresh(5 * 60 * 1000);
     getWeather();
     initMap();
 });
