@@ -1,5 +1,6 @@
 .body{
 	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -25,10 +26,10 @@ a:hover{
 }
 
 .top-nav-collapse{
-	padding: 0px;
+	padding: 0;
 }
 
-.nav-pills li.active a{
+.nav-pills .active a{
 	color: #2E3233;
 	background-color: #CAF200;
 }
@@ -45,36 +46,48 @@ a:hover{
 }
 */
 
+.video-container{
+	position: relative;
+}
+
 .bgvid video {
-	position:relative;
+	position: relative;
 	/*min-width: auto;
 	min-height: auto;*/
-	width: 100%		!important;
-	height: auto	!important;
-	background-size: cover;
-	margin: 0px;
-	border-bottom: 1px black;
-	transition: 1s opacity;
-}
-
-.video{
 	width: 100%;
 	height: auto;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px black;
+	transition: 1s opacity;
+	z-index: 0;
 }
 
-.video .container{
-	position:relative;
-	top: -20em;
+.overlay{
+	position: absolute;
+	z-index: 1;
+	bottom: 20%;
+	left: 3%;
 	text-align: center;
-	padding: 0px;
 }
 
-.video .container a{
-	font-size: 10em;
-	color: #E2E3DF;
+.overlay .banner-title{
+	color:rgb(255,255,255);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 7em;
+}
+.overlay .banner-links{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 2em;
 }
 
-.video .container a:hover{
+.overlay .banner-links a{
+	color: rgb(255, 255, 255);
+
+}
+
+.overlay .banner-link a:hover{
 	color: #CAF200;
 }
 
@@ -85,26 +98,18 @@ a:hover{
 
 .about{
 	position: relative;
+	height: 300px;
 	background-color:#FFFEFC;
 	color: #2E3233;
-	height:130%;
 	padding-bottom: 85px;
 }
 
-.about h1{
-	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	 font-size: 150px;
-	 text-align: center;
-	 width: 100%;
-}
-
-.about h2{
+.header{
 	color: #CAF200;
 }
 
 .about .row{
 	position:relative;
-	top:75px;
 	height: auto;
 }
 
@@ -115,18 +120,18 @@ a:hover{
 	color: #2E3233;
 	padding:10px;
 	display: block;
-	bottom:0;
-	margin: 0px;
+	bottom: 0;
+	margin: 0;
 }
 .footer .container{
-	bottom: 0px;
+	bottom: 0;
 }
 .footer ul{
-	padding: 0px;
+	padding: 0;
 }
 .footer li{
 	display: inline;
-	padding: 0px;
+	padding: 0;
 }
 
 /* TODO: make jumbotron for mobile

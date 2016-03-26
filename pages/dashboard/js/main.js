@@ -11,7 +11,8 @@ function getWeather() {
         current += '<h3>'+weather.temp+'&deg;'+weather.units.temp+'</h3>';
         current += '<p>'+"LOW: "+weather.low+" HIGH: " + weather.high+'</p>'
 
-        for(var i=0;i<weather.forecast.length;i++)
+        //weather.forecast.length = max length
+        for(var i=0;i<4;i++)
         {
             day = '<td>'+weather.forecast[i].day+'</td>';
             thumbnail = '<td><img src="'+weather.forecast[i].thumbnail+'"></td>';
@@ -36,10 +37,10 @@ function getWeather() {
 };
 
 // get traffic information for Corvallis
-function initMap    () {
+function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
-    center: {lat:44.5771716, lng:-123.2804807}
+    zoom: 14,
+    center: {lat:44.5671951, lng:-123.2723171}
   });
 
   var trafficLayer = new google.maps.TrafficLayer();
@@ -53,9 +54,22 @@ function timedRefresh(t) {
     setTimeout("location.reload(true);", t);
 }
 
+// instafeed doesnt work anymore due to API changes
+function instafeed(){
+    console.log("executing INSTAFEED");
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        accessToken: '308748409.4d9a01f.02c3653642e54cbda9294bdbd9377a16'
+    });
+    feed.run();
+}
+
+
 // onload do this:
 $(document).ready(function(){
     timedRefresh(5 * 60 * 1000);
     getWeather();
+    instafeed();
     initMap();
 });

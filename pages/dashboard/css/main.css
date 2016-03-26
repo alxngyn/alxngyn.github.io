@@ -9,26 +9,35 @@ body{
     padding-bottom: 20px;
 }
 
+
 .title{
     text-align: center;
+}
+
+.table{
+    max-width: 300px;
 }
 
 .table td {
     text-align: center;
 }
 
-.weather-container *{
-    text-align: center;
+.current-weather *{
     max-width: 400px;
-    max-height: 500px;
+    max-height: 250px;
 }
 
 .calendar-container .container iframe{
     width: 400px;
-    max-height: 500px;
+    max-height: 250px;
+}
+
+.forecast-container{
+    max-width: 400px;
+    max-height: 250px;
 }
 
 #map {
-  height: 500px;
+  height: 250px;
   width: 400px;
 }
