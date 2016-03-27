@@ -1,0 +1,43 @@
+
+
+/* ==========================================================================
+   Alex Nguyen's custom styles
+   ========================================================================== */
+
+body{
+    background-color: rgb(192, 192, 192);
+    padding-bottom: 20px;
+}
+
+
+.title{
+    text-align: center;
+}
+
+.table{
+    max-width: 300px;
+}
+
+.table td {
+    text-align: center;
+}
+
+.current-weather *{
+    max-width: 400px;
+    max-height: 250px;
+}
+
+.calendar-container .container iframe{
+    width: 400px;
+    max-height: 250px;
+}
+
+.forecast-container{
+    max-width: 400px;
+    max-height: 250px;
+}
+
+#map {
+  height: 250px;
+  width: 400px;
+}

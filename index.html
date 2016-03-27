@@ -5,12 +5,14 @@
         <title>Alex Nguyen</title>
         <meta name="description" content="Welcome to alxngyn.com">
 
+        <!-- STYLE SHEETS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body data-spy="scroll" data-target=".navbar">
         <section id="home">
-            <!-- Navbar -->
+            <!-- old Navbar -->
+            <!--
             <div class="navbar navbar-fixed-top">
                 <div class="container">
                     <ul class="nav nav-pills pull-left">
@@ -21,17 +23,31 @@
                     </ul>
                 </div>
             </div>
+            -->
             <!-- Jumbotron video -->
-            <div class="video">
-                    <div class="bgvid embed-responsive embed-responsive-16by9">
-                        <video autoplay loop poster="img/Portland.jpg" id="bgvid">
-                            <source src="vids/banner.mp4" type="video/mp4">
-                        </video>
+            <div class="video-container">
+                <div class="bgvid embed-responsive embed-responsive-16by9">
+                    <video autoplay loop poster="img/banner.png" id="bgvid">
+                        <source src="vids/banner2.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="overlay">
+                    <!-- Title/myname -->
+                    <div class="title">
+                        <span class="banner-title">
+                            Alex Nguyen
+                        </span>
                     </div>
-                    <!-- Button to scroll down on video -->
-                    <div class="container">
+                    <!-- div for links-->
+                    <div class="banner-links">
+                        <a href="https://www.linkedin.com/pub/alex-nguyen/82/282/679">Linkedin</a>
+                        <a href="http://instagram.com/peachvector">Instagram</a>
+                        <a href="mailto:alexlnguyen@gmail.com">Email</a>
+                    </div>
+
+                    <!-- Button to scroll down on video
                         <a class="page-scroll" href="#about" ><span class="glyphicon glyphicon-menu-down"> </span> </a>
-                    </div>
+                    -->
                 </div>
             </div>
         </section>
@@ -39,30 +55,45 @@
         <section id="about">
             <div class="about">
                 <div class="container">
-                    <!-- the "title" of the page -->
-                    <div class="title">
-                        <h1>
-                            Alex Nguyen
-                        </h1>
-                    </div>
                     <!-- The bio and skills-->
                     <div class="row">
-                        <div class="col-md-8">
-                            <h2>Bio</h2>
+                        <div class="col-md-12">
+                            <h2 class="header">Bio</h2>
                             <p>
                                 Hi! I am a programmer/developer/engineer/support/analyst or whatever you want to call it.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Projects">
+            <div class="projects">
+                <div class="container">
+                    <h2 class="header">Projects</h2>
+                    <p>These are some of the projects I have worked on.</p>
+                    <!-- The projects I've worked on-->
+                    <div class="row">
                         <div class="col-md-4">
-                            <h2>Skills</h2>
-                            <ul>
-                                <li>C++</li>
-                                <li>Python</li>
-                                <li>HTML/CSS</li>
-                                <li>Javascript</li>
-                                <li>Cooking</li>
-                                <li>Hiking</li>
-                            </ul>
+                            <div class="thumbnail">
+                                <a href="pages/burger/index.html"><img src="img/burgers_thumb.png"></a>
+                            </div>
+                            <div class="thumbnail">
+                                <a href="pages/dashboard/index.html"><img src="img/dashboard_thumb.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="pages/burrito/index.html"><img src="img/burrito_thumb.png"></a>
+                            </div>
+                            <div class="thumbnail">
+                                <a href="https://github.com/alxngyn/twilio-rpi-tts"><img src="img/rpitwilio_thumb.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="#"><img src="img/fooddb_thumb.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,16 +119,16 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="mailto:alexlnguyen@gmail.com">
                                         Email
                                     </a>
                                 </li>
                         </ul>
                     </div>
                     <!-- Closing remarks and year -->
-                    <div class="year col-md-10">
+                    <div class="year col-md-10 text-muted">
                         <ul class="pull-right">
-                            <li>Made with sweat, tears and love. 2015</li>
+                            <li>Made with sweat, tears and love. Ver 2.5 2016</li>
                         </ul>
                     </div>
                 </div>
@@ -105,6 +136,7 @@
         </section>
 
 
+        <!-- JS FILES-->
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.easing.js"></script>

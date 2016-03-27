@@ -1,0 +1,93 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+    <!--<h1 class="title col-lg-12"> Alex Nguyen's DASHBOARD </h1>-->
+    <div class="row">
+        <div class="first-column">
+            <div class="col-lg-4">
+                <div class="current-weather">
+                    <div class="container">
+                        <h3>Weather</h3>
+                        <div id="weather text-center">
+                            <div class="current-weather">
+                                <div id="location"></div>
+                                <div id="current"></div>
+                            </div>
+
+                            <div id="updateTime"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast-container col-lg-4">
+                    <div class="container">
+                        <h3>Forecast</h3>
+                        <table class="table table-bordered table-hover">
+                            <tr id="dayOfTheWeek">
+                                <td></td>
+                            </tr>
+                            <tr id="weather-thumbnails">
+                                <td></td>
+                            </tr>
+                            <tr id="weather-highs">
+                                <td>HIGHS</td>
+                            </tr>
+                            <tr id="weather-lows">
+                                <td>LOWS</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="calendar-container">
+                <div class="container">
+                    <h3>Schedule</h3>
+                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=alexlnguyen%40gmail.com&amp;color=%238C500B&amp;src=bckrq8kpu62t45f9222b5nrfac%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FLos_Angeles" style="border-width:0" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+            <div class="instagram-container col-lg-4">
+                <div class="container">
+                    <h3>Instagram</h3>
+                    <div id="instafeed"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="traffic-container">
+                <div class="container">
+                    <h3>Traffic Map</h3>
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div class="twitter-container col-lg-4">
+                <div class="container">
+                    <h3>Twitter</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXOnhvukz_j2r9B5eQL04xp8JvBIzHutI&callback=initMap" async defer></script>
+    <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

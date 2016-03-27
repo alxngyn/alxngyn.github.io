@@ -2,7 +2,9 @@ TODO:
 - Make videos and convert to webm
 - Contact form that sends me an email
 - Change color themes, needs to brighter
--
+- Validate HTML (?)
+- Find a nice photo of me and fill out bio
+- Parallax effect
 
 Dreams:
 - Parallax effect of my laptop rotating horizontally 360
