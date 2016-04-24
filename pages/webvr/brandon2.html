@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-entity  position="-5 3 -10" text="text: hahahahahahahha"></a-entity>
+        <a-entity  position="-5 2 -9" text="text: hahahahahahahha"></a-entity>
+        <a-entity  position="-5 1 -8" text="text: hahahahahahahha"></a-entity>
+        <a-entity  position="-5 0 -7" text="text: hahahahahahahha"></a-entity>
+        <a-entity  position="-5 -1 -6" text="text: hahahahahahahha"></a-entity>
+        <a-entity  position="-5 -2 -5" text="text: hahahahahahahha"></a-entity>
+        <a-entity  position="-5 -3 -4" text="text: hahahahahahahha"></a-entity>
+
+
+        <a-entity  position="-8 5 -2" text="text: Do you want a study buddy?"></a-entity>
+        <a-entity  position="-8 4 -2" text="text: Ima work on business hw"></a-entity>
+
+
+        <a-assets>
+          <a-asset-item id="plant" src="./plant.dae"></a-asset-item>
+        </a-assets>
+        <a-entity  position="6 -1 -8" text="text: This is a plant without texture"></a-entity>
+        <a-entity  position="8 0 -8" rotate="0 90 0 " collada-model="#plant"></a-entity>
+
+    </a-scene>
+  </body>
+</html>
