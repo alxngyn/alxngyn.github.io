@@ -16,7 +16,11 @@
         <a-entity  position="-5 -1 -6" text="text: BACON BACON BACON BACON BACON"></a-entity>
         <a-entity  position="-5 -2 -5" text="text: BACON BACON BACON BACON BACON"></a-entity>
         <a-entity  position="-5 -3 -4" text="text: BACON BACON BACON BACON BACON"></a-entity>
-        <a-entity  position="0 0 1" rotate="0 90 0 " collada-model="#plant"></a-entity>
+		
+		<a-entity position="0 0 1" rotate="0 90 0 " collada-model="#plant">
+			<a-animation begin="1500 " attribute="position" easing="linear" from="1 1 1" to="2 4 -8"></a-animation>
+		</a-entity>
+
 
     </a-scene>
   </body>
