@@ -1,0 +1,3 @@
+[submodule "pages/Mcdonalds"]
+	path = pages/Mcdonalds
+	url = https://github.com/alxngyn/Mcdonalds.git
